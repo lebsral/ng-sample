@@ -7,8 +7,8 @@ describe('sample App', function() {
     page = new SamplePage();
   });
 
-  it('should display message saying app works', () => {
+  it('should fail, but does not', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Some text not in my app!');
   });
 });
